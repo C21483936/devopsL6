@@ -3,7 +3,7 @@ CFLAGS = -Wall
 
 all: hello
 
-hello: hello.c
+hello: hello.C
 		$(CC) $(CFLAGS) -o hello hello.C
 
 Clean:
