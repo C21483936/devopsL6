@@ -1,14 +1,17 @@
 name: Build
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-	build:
-		runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-		steps:
-		- name: Checkout code
-		uses: actions/checkout@v2
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
 
-		- name: Build
-		run: make
+      - name: Build
+        run: make
