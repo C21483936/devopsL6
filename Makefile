@@ -1,7 +1,10 @@
-all: my_program
+CC = gcc
+CFLAGS = -Wall
 
-my_program: main.c
-    gcc -o my_program main.c
+all: hello
 
-clean:
-    rm -f my_program
+hello: hello.c
+		$(CC) $(CFLAGS) -o hello hello.CC
+
+Clean:
+		rm -f hello
