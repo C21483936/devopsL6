@@ -13,5 +13,6 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
 
-      - name: Build
+      - name: Build with make
         run: make
+
