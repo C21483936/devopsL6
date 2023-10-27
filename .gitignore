@@ -1,0 +1,6 @@
+# Ignore compiled binaries
+*.o
+hello
+
+# Ignore build artifacts
+/build/
